@@ -1,18 +1,10 @@
-file = open('/a/b/c.txt', 'r')
-lines = file.readlines()
-
-c = 0
-for i in range(len(lines)):
-    print c, lines[c]
-    c = c+1
-
-
-
-# Annotated
+#-----------------------------------------------------------------
+# Annotated example of a bad snippet for printing the contents of a file
+#
 # no "if __name__..."
 # code not in a function
 # no license
-# file is a reversed word in python
+# "file" is a reversed word in python
 # use with open(... instead of f = open(...
 # avoid hardcoded paths. use os.path.join and string formatting
 file = open('/a/b/c.txt', 'r')
