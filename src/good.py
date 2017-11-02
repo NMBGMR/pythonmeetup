@@ -14,7 +14,7 @@
 # limitations under the License.
 # ===============================================================================
 
-def print_file(path):
+def print_file_contents(path):
     print 'Printing contents of {}'.format(path)
     with open(path, 'r') as rfile:
         for i,line in enumerate(rfile):
@@ -23,6 +23,6 @@ def print_file(path):
 
 if __name__ == '__main__':
     test_path = 'test_file.txt'
-    print_file(test_path)
+    print_file_contents(test_path)
 
 # ============= EOF =============================================
